@@ -25,12 +25,21 @@ public class Deck {
 	public Card dealCard() {
 		if (deck.isEmpty()) {
 			return null;
-		}
-		return deck.remove(deck.size() - 1);
+		} else {
+		return deck.remove(deck.size() - 1);}
 	}
+	
 
 	public void shuffle() {
 		Collections.shuffle(deck);
+	}
+
+	public List<Card> getDeck() {
+		return deck;
+	}
+
+	public void setDeck(List<Card> deck) {
+		this.deck = deck;
 	}
 
 }
